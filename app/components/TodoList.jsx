@@ -6,9 +6,10 @@ var TodoList = React.createClass({
 		var {todos} = this.props;
 		
 		var renderTodos = () => {
-			return todos.map((todo) => {
+			return todos.map((todo, index) => {
+				var todoNum = index + 1;
 				return (
-					<Todo key={`todo_${todo.id}`} {...todo} />
+					<Todo key={todo.id} no={todoNum} {...todo} />
 				);
 			});
 		}
