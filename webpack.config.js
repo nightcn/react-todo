@@ -31,6 +31,7 @@ module.exports = {
 		modules: [
 			__dirname,
 			path.join(__dirname, 'app/components'),
+			path.join(__dirname, 'app/actions'),
 			path.join(__dirname, 'app/styles'),
 			path.join(__dirname, 'app/api'),
 			'node_modules'
