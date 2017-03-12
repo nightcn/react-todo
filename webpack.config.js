@@ -31,14 +31,14 @@ module.exports = {
 		modules: [
 			__dirname,
 			path.join(__dirname, 'app/components'),
-			path.join(__dirname, 'app/actions'),
-			path.join(__dirname, 'app/styles'),
 			path.join(__dirname, 'app/api'),
 			'node_modules'
 
 		],
 		alias: {
-			//applicationStyles: 'app/styles/app.scss'
+			applicationStyles: 'app/styles/app.scss',
+			actions: 'app/actions/actions.jsx',
+			reducers: 'app/reducers/reducers.jsx'
 		},
 		extensions: ['.js', '.jsx', '.scss', '.css']
 	},
