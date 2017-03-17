@@ -21,6 +21,11 @@ export var showCompletedReducer = (state = false, action) => {
 
 export var todosReducer = (state = [], action) => {
 	switch (action.type) {
+		case 'ADD_TODOS':
+			return [
+				...state,
+				...action.todos
+			];
 		case 'ADD_TODO':
 			return [
 				...state,
