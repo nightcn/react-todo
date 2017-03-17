@@ -13,9 +13,7 @@ store.subscribe(() => {
 	console.log('New state', store.getState());
 });
 
-store.dispatch(actions.addTodo('Yeah baby'));
-store.dispatch(actions.setSearchText('baby'));
-store.dispatch(actions.toggleShowCompleted());
+
 
 $(document).foundation();
 
